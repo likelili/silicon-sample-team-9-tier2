@@ -1,6 +1,6 @@
 {
   "upload_type": "software",
-  "title": "Silicon Sample Benchmark — Tier 2 (group-level reasoning) submission (team team_9)",
+  "title": "Silicon Sample Benchmark — Tier 2 group-level submission (Team 9)",
   "version": "1.0-t2",
   "language": "eng",
   "access_right": "open",
@@ -27,7 +27,7 @@
       "affiliation": "Columbia University"
     }
   ],
-  "description": "<p>Group-level Silicon Sample predictions obtained by calibrating GPT-5.6 Luna digital-twin responses with Twin-2K Wave-4 anchors using the SYN-DIGITS elastic-net estimator.<\/p>",
+  "description": "<p>Group-level Silicon Sample predictions obtained by calibrating GPT-5.6 Luna digital-twin responses with Twin-2K Wave-4 anchors using the SYN-DIGITS elastic-net estimator and poststratifying the full clean pool to a 40-cell gender-by-age-by-race target distribution.<\/p>",
   "keywords": [
     "Silicon Sample Benchmark",
     "silicon sampling",

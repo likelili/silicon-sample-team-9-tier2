@@ -1,222 +1,222 @@
 condition,outcome,mean
-control,trust_multidimensional,78.066256853595
-control,trust_post,75.365760403972
-control,distrust_post,24.4115298430023
-control,funding_perceptions,42.1526965418564
-control,policy_role_mean,76.1579794358166
-control,inst_trust_mean,69.366685150029
-control,belief_post,88.3409094154486
-control,concern_mean,72.8459075762212
-control,policy_general,75.5651379718479
-control,policy_specific_mean,72.3163968689616
-control,behavior_mean,40.6627598440203
-control,donation_ams,2.61420007282353
-control,newsletter_signup,0.017600901714239
-Corporate reliance,trust_multidimensional,79.4146770603842
-Corporate reliance,trust_post,79.4669164902466
-Corporate reliance,distrust_post,21.778937489424
-Corporate reliance,funding_perceptions,41.6792478282177
-Corporate reliance,policy_role_mean,76.0780462162949
-Corporate reliance,inst_trust_mean,70.1693714963626
-Corporate reliance,belief_post,89.4774073805387
-Corporate reliance,concern_mean,73.8995377754631
-Corporate reliance,policy_general,76.0789393379403
-Corporate reliance,policy_specific_mean,72.6166650219619
-Corporate reliance,behavior_mean,41.1932257315289
-Corporate reliance,donation_ams,2.79040916859833
-Corporate reliance,newsletter_signup,0.0173495314131837
-Social justice,trust_multidimensional,78.5553271886137
-Social justice,trust_post,78.1774582873771
-Social justice,distrust_post,22.3575060967346
-Social justice,funding_perceptions,40.915523384023
-Social justice,policy_role_mean,77.2716442660022
-Social justice,inst_trust_mean,69.936160226209
-Social justice,belief_post,89.3595249028437
-Social justice,concern_mean,74.4556737729717
-Social justice,policy_general,76.9789742453076
-Social justice,policy_specific_mean,73.7267680104133
-Social justice,behavior_mean,41.9582567853385
-Social justice,donation_ams,2.7426862551696
-Social justice,newsletter_signup,0.011110262358994
-Interview Prof. Maraun,trust_multidimensional,81.0814368400745
-Interview Prof. Maraun,trust_post,77.9457957520808
-Interview Prof. Maraun,distrust_post,22.3290380333197
-Interview Prof. Maraun,funding_perceptions,41.7160121988781
-Interview Prof. Maraun,policy_role_mean,75.809599586361
-Interview Prof. Maraun,inst_trust_mean,70.6617764601307
-Interview Prof. Maraun,belief_post,89.3019955308756
-Interview Prof. Maraun,concern_mean,73.586471876934
-Interview Prof. Maraun,policy_general,75.7921859766496
-Interview Prof. Maraun,policy_specific_mean,72.7974215377159
-Interview Prof. Maraun,behavior_mean,41.4116230464397
-Interview Prof. Maraun,donation_ams,2.77236011759223
-Interview Prof. Maraun,newsletter_signup,0.0162788248804795
-Funding,trust_multidimensional,77.3144169201561
-Funding,trust_post,74.2911120970217
-Funding,distrust_post,26.0229590600403
-Funding,funding_perceptions,49.0799182556119
-Funding,policy_role_mean,74.547906085316
-Funding,inst_trust_mean,68.1179325551263
-Funding,belief_post,88.6861309507828
-Funding,concern_mean,72.3075831996624
-Funding,policy_general,74.2510456551796
-Funding,policy_specific_mean,71.8326762955927
-Funding,behavior_mean,39.9464158915002
-Funding,donation_ams,2.69935678310748
-Funding,newsletter_signup,0.0128111628006559
-Oil industry misinformation,trust_multidimensional,81.7443296759951
-Oil industry misinformation,trust_post,83.1132948824984
-Oil industry misinformation,distrust_post,18.4203702434698
-Oil industry misinformation,funding_perceptions,41.0944556800087
-Oil industry misinformation,policy_role_mean,77.9837560708601
-Oil industry misinformation,inst_trust_mean,72.1078376547104
-Oil industry misinformation,belief_post,90.5023676931355
-Oil industry misinformation,concern_mean,74.9760413153947
-Oil industry misinformation,policy_general,77.6435689335554
-Oil industry misinformation,policy_specific_mean,74.0788335117561
-Oil industry misinformation,behavior_mean,42.0298709722989
-Oil industry misinformation,donation_ams,2.91734934122907
-Oil industry misinformation,newsletter_signup,0.0138578902279949
-Measurement & modeling (1),trust_multidimensional,79.123064999331
-Measurement & modeling (1),trust_post,76.7363799735959
-Measurement & modeling (1),distrust_post,23.1707698988324
-Measurement & modeling (1),funding_perceptions,41.0668621716549
-Measurement & modeling (1),policy_role_mean,76.7028436257076
-Measurement & modeling (1),inst_trust_mean,70.063269276992
-Measurement & modeling (1),belief_post,89.0907459141139
-Measurement & modeling (1),concern_mean,73.4138314416394
-Measurement & modeling (1),policy_general,76.0395879021393
-Measurement & modeling (1),policy_specific_mean,72.7718580609447
-Measurement & modeling (1),behavior_mean,41.0950245122844
-Measurement & modeling (1),donation_ams,2.69851332985979
-Measurement & modeling (1),newsletter_signup,0.018405112066625
-Former skeptics,trust_multidimensional,78.5506223039227
-Former skeptics,trust_post,78.6522648888603
-Former skeptics,distrust_post,22.176904317252
-Former skeptics,funding_perceptions,42.8057928839661
-Former skeptics,policy_role_mean,76.1970396470604
-Former skeptics,inst_trust_mean,70.5313458770431
-Former skeptics,belief_post,89.4278690308888
-Former skeptics,concern_mean,74.1035173938125
-Former skeptics,policy_general,76.8928720811262
-Former skeptics,policy_specific_mean,72.6307911808323
-Former skeptics,behavior_mean,40.7976704290504
-Former skeptics,donation_ams,2.89041436685027
-Former skeptics,newsletter_signup,0.0155417709829608
-High public trust,trust_multidimensional,79.5695981415481
-High public trust,trust_post,76.9340911469543
-High public trust,distrust_post,22.5719050576241
-High public trust,funding_perceptions,42.1669978127996
-High public trust,policy_role_mean,76.8785633736465
-High public trust,inst_trust_mean,69.6077160940164
-High public trust,belief_post,89.1587196653112
-High public trust,concern_mean,73.4146538144307
-High public trust,policy_general,76.1402183000673
-High public trust,policy_specific_mean,72.8023327078802
-High public trust,behavior_mean,40.5099452209602
-High public trust,donation_ams,2.80406419262372
-High public trust,newsletter_signup,0.0132572741218753
-Measurement & modeling (2),trust_multidimensional,79.1916240818733
-Measurement & modeling (2),trust_post,76.4038134901407
-Measurement & modeling (2),distrust_post,23.3933050745289
-Measurement & modeling (2),funding_perceptions,41.6040849803535
-Measurement & modeling (2),policy_role_mean,76.1967910150282
-Measurement & modeling (2),inst_trust_mean,69.8871978448205
-Measurement & modeling (2),belief_post,88.9868106174222
-Measurement & modeling (2),concern_mean,73.4563604341404
-Measurement & modeling (2),policy_general,75.8749199907336
-Measurement & modeling (2),policy_specific_mean,72.6337109262507
-Measurement & modeling (2),behavior_mean,41.2567934691825
-Measurement & modeling (2),donation_ams,2.71136329158248
-Measurement & modeling (2),newsletter_signup,0.0128967810247736
-Peer-review,trust_multidimensional,79.9660039783521
-Peer-review,trust_post,79.2302899035334
-Peer-review,distrust_post,21.8435700401825
-Peer-review,funding_perceptions,41.9234404800318
-Peer-review,policy_role_mean,76.3378423571059
-Peer-review,inst_trust_mean,70.5860962604546
-Peer-review,belief_post,89.0439727136417
-Peer-review,concern_mean,73.7584089762368
-Peer-review,policy_general,76.0480089788979
-Peer-review,policy_specific_mean,72.8260763792352
-Peer-review,behavior_mean,41.4249988969111
-Peer-review,donation_ams,2.76773031362022
-Peer-review,newsletter_signup,0.0218823681825318
-Scientist community helpers,trust_multidimensional,80.6463271238594
-Scientist community helpers,trust_post,79.1178402787166
-Scientist community helpers,distrust_post,21.7946821528694
-Scientist community helpers,funding_perceptions,41.1424520141633
-Scientist community helpers,policy_role_mean,77.3536457224148
-Scientist community helpers,inst_trust_mean,69.5619690108884
-Scientist community helpers,belief_post,89.4251765348915
-Scientist community helpers,concern_mean,74.1786048880031
-Scientist community helpers,policy_general,76.4232218230802
-Scientist community helpers,policy_specific_mean,72.6635638406938
-Scientist community helpers,behavior_mean,41.3001837396905
-Scientist community helpers,donation_ams,2.8512080710654
-Scientist community helpers,newsletter_signup,0.0164784660870561
-Consensus,trust_multidimensional,79.8664937665849
-Consensus,trust_post,77.0092912546573
-Consensus,distrust_post,22.8694853762672
-Consensus,funding_perceptions,42.0870772852433
-Consensus,policy_role_mean,77.2302543615335
-Consensus,inst_trust_mean,70.4976457759765
-Consensus,belief_post,90.7710938786144
-Consensus,concern_mean,73.2185828893422
-Consensus,policy_general,76.2317453955402
-Consensus,policy_specific_mean,72.8017033496927
-Consensus,behavior_mean,40.7415059348002
-Consensus,donation_ams,2.7441309812158
-Consensus,newsletter_signup,0.0100784392149211
-Portrait Prof. Cherry,trust_multidimensional,79.1406942493975
-Portrait Prof. Cherry,trust_post,77.150319501421
-Portrait Prof. Cherry,distrust_post,23.0158571052595
-Portrait Prof. Cherry,funding_perceptions,41.8228725784614
-Portrait Prof. Cherry,policy_role_mean,77.3618795178787
-Portrait Prof. Cherry,inst_trust_mean,69.6605447889495
-Portrait Prof. Cherry,belief_post,88.8319973994062
-Portrait Prof. Cherry,concern_mean,73.4546410128655
-Portrait Prof. Cherry,policy_general,76.0913448580241
-Portrait Prof. Cherry,policy_specific_mean,72.4788925786772
-Portrait Prof. Cherry,behavior_mean,41.0998484652924
-Portrait Prof. Cherry,donation_ams,2.6601911299294
-Portrait Prof. Cherry,newsletter_signup,0.0184294376208615
-Model accuracy,trust_multidimensional,80.4193996522304
-Model accuracy,trust_post,79.8977024662887
-Model accuracy,distrust_post,21.1951941956978
-Model accuracy,funding_perceptions,41.1802295277391
-Model accuracy,policy_role_mean,77.3712086725768
-Model accuracy,inst_trust_mean,70.8956784084562
-Model accuracy,belief_post,91.2357438143292
-Model accuracy,concern_mean,74.6529202158026
-Model accuracy,policy_general,77.2779088161734
-Model accuracy,policy_specific_mean,73.3445308828678
-Model accuracy,behavior_mean,41.6209044429904
-Model accuracy,donation_ams,2.79447986802362
-Model accuracy,newsletter_signup,0.0136814446336388
-Interview Prof. Sebille,trust_multidimensional,80.3666290322459
-Interview Prof. Sebille,trust_post,77.1532843262157
-Interview Prof. Sebille,distrust_post,22.7927159609649
-Interview Prof. Sebille,funding_perceptions,41.9387670900632
-Interview Prof. Sebille,policy_role_mean,77.2708786654418
-Interview Prof. Sebille,inst_trust_mean,69.8417615314502
-Interview Prof. Sebille,belief_post,89.0030975160589
-Interview Prof. Sebille,concern_mean,74.4293380662606
-Interview Prof. Sebille,policy_general,76.706734278104
-Interview Prof. Sebille,policy_specific_mean,73.2281864809227
-Interview Prof. Sebille,behavior_mean,41.5637347222514
-Interview Prof. Sebille,donation_ams,2.75283953142683
-Interview Prof. Sebille,newsletter_signup,0.0121818313077407
-Extreme weather predictions,trust_multidimensional,78.5398603847027
-Extreme weather predictions,trust_post,74.9401054981581
-Extreme weather predictions,distrust_post,24.1812715021616
-Extreme weather predictions,funding_perceptions,41.7488751010335
-Extreme weather predictions,policy_role_mean,76.1736428899714
-Extreme weather predictions,inst_trust_mean,68.6674949795112
-Extreme weather predictions,belief_post,86.4542470894658
-Extreme weather predictions,concern_mean,75.1670344655055
-Extreme weather predictions,policy_general,76.378408568228
-Extreme weather predictions,policy_specific_mean,72.1988313561364
-Extreme weather predictions,behavior_mean,40.799671112899
-Extreme weather predictions,donation_ams,2.73939540496361
-Extreme weather predictions,newsletter_signup,0.0225138105051904
+control,trust_multidimensional,78.2654950096625
+control,trust_post,75.6564452506929
+control,distrust_post,24.1422990430601
+control,funding_perceptions,42.2083508009119
+control,policy_role_mean,76.1978272276984
+control,inst_trust_mean,69.507566992556
+control,belief_post,88.6028069039193
+control,concern_mean,72.9920201362266
+control,policy_general,75.6013862670046
+control,policy_specific_mean,72.3160481344814
+control,behavior_mean,40.795286988256
+control,donation_ams,2.64848922663116
+control,newsletter_signup,0.0171743992235625
+Corporate reliance,trust_multidimensional,79.5310410184987
+Corporate reliance,trust_post,79.6292208931391
+Corporate reliance,distrust_post,21.6509229486748
+Corporate reliance,funding_perceptions,41.7094522193317
+Corporate reliance,policy_role_mean,76.1209712432832
+Corporate reliance,inst_trust_mean,70.2858812778484
+Corporate reliance,belief_post,89.654260824109
+Corporate reliance,concern_mean,74.0123165409166
+Corporate reliance,policy_general,76.0967845643248
+Corporate reliance,policy_specific_mean,72.6140831547706
+Corporate reliance,behavior_mean,41.3485673562661
+Corporate reliance,donation_ams,2.81137035000484
+Corporate reliance,newsletter_signup,0.0169876474768633
+Social justice,trust_multidimensional,78.7075361193988
+Social justice,trust_post,78.4069892716427
+Social justice,distrust_post,22.1029396558568
+Social justice,funding_perceptions,41.0091904388572
+Social justice,policy_role_mean,77.3178097324159
+Social justice,inst_trust_mean,70.0478202733728
+Social justice,belief_post,89.5877500149711
+Social justice,concern_mean,74.5443327157707
+Social justice,policy_general,77.0472701822332
+Social justice,policy_specific_mean,73.7804873381379
+Social justice,behavior_mean,42.1104691625768
+Social justice,donation_ams,2.77912968217956
+Social justice,newsletter_signup,0.01092838178896
+Interview Prof. Maraun,trust_multidimensional,81.1919219339183
+Interview Prof. Maraun,trust_post,78.0786751680635
+Interview Prof. Maraun,distrust_post,22.2198534413287
+Interview Prof. Maraun,funding_perceptions,41.7418459411089
+Interview Prof. Maraun,policy_role_mean,75.8120274341295
+Interview Prof. Maraun,inst_trust_mean,70.7620505421429
+Interview Prof. Maraun,belief_post,89.4676550801803
+Interview Prof. Maraun,concern_mean,73.6837913133263
+Interview Prof. Maraun,policy_general,75.8314972813198
+Interview Prof. Maraun,policy_specific_mean,72.8108412510115
+Interview Prof. Maraun,behavior_mean,41.5971259393345
+Interview Prof. Maraun,donation_ams,2.81148435929689
+Interview Prof. Maraun,newsletter_signup,0.0160991689375432
+Funding,trust_multidimensional,77.464451357241
+Funding,trust_post,74.5196656749216
+Funding,distrust_post,25.7774167504572
+Funding,funding_perceptions,49.2696981605455
+Funding,policy_role_mean,74.5503711865102
+Funding,inst_trust_mean,68.2314942030088
+Funding,belief_post,88.8764326047713
+Funding,concern_mean,72.3749059327807
+Funding,policy_general,74.2804872417094
+Funding,policy_specific_mean,71.8584963893844
+Funding,behavior_mean,40.1043710983128
+Funding,donation_ams,2.73309978444758
+Funding,newsletter_signup,0.012446838288202
+Oil industry misinformation,trust_multidimensional,81.8678951479791
+Oil industry misinformation,trust_post,83.2058560523655
+Oil industry misinformation,distrust_post,18.3473899544789
+Oil industry misinformation,funding_perceptions,41.0607272045611
+Oil industry misinformation,policy_role_mean,78.0166669613159
+Oil industry misinformation,inst_trust_mean,72.2199114357501
+Oil industry misinformation,belief_post,90.6164865038496
+Oil industry misinformation,concern_mean,75.0453604551021
+Oil industry misinformation,policy_general,77.6349616975624
+Oil industry misinformation,policy_specific_mean,74.0493075001344
+Oil industry misinformation,behavior_mean,42.1861096420917
+Oil industry misinformation,donation_ams,2.9447289292002
+Oil industry misinformation,newsletter_signup,0.0135662581494638
+Measurement & modeling (1),trust_multidimensional,79.2588063797589
+Measurement & modeling (1),trust_post,76.9930829650633
+Measurement & modeling (1),distrust_post,22.9563443991616
+Measurement & modeling (1),funding_perceptions,41.381448318203
+Measurement & modeling (1),policy_role_mean,76.7254921870845
+Measurement & modeling (1),inst_trust_mean,70.1900246379692
+Measurement & modeling (1),belief_post,89.2745607781842
+Measurement & modeling (1),concern_mean,73.4823680792699
+Measurement & modeling (1),policy_general,76.096373602948
+Measurement & modeling (1),policy_specific_mean,72.7674124282149
+Measurement & modeling (1),behavior_mean,41.2563382031134
+Measurement & modeling (1),donation_ams,2.72198907870649
+Measurement & modeling (1),newsletter_signup,0.0189434625908158
+Former skeptics,trust_multidimensional,78.6824334869669
+Former skeptics,trust_post,78.952843063439
+Former skeptics,distrust_post,21.9036166281291
+Former skeptics,funding_perceptions,42.6719663943499
+Former skeptics,policy_role_mean,76.2098309523095
+Former skeptics,inst_trust_mean,70.7021698626736
+Former skeptics,belief_post,89.6189773816974
+Former skeptics,concern_mean,74.2226239611917
+Former skeptics,policy_general,77.0045829328144
+Former skeptics,policy_specific_mean,72.6724766654796
+Former skeptics,behavior_mean,41.0227261942434
+Former skeptics,donation_ams,2.94811186949758
+Former skeptics,newsletter_signup,0.0150750557968825
+High public trust,trust_multidimensional,79.7314248083187
+High public trust,trust_post,77.1547582931055
+High public trust,distrust_post,22.3031002015712
+High public trust,funding_perceptions,42.1714637752093
+High public trust,policy_role_mean,76.9364106670759
+High public trust,inst_trust_mean,69.7307786036447
+High public trust,belief_post,89.366816929675
+High public trust,concern_mean,73.5339372150878
+High public trust,policy_general,76.2483761285963
+High public trust,policy_specific_mean,72.8337487687142
+High public trust,behavior_mean,40.6626739093916
+High public trust,donation_ams,2.8370725442188
+High public trust,newsletter_signup,0.0127371422574905
+Measurement & modeling (2),trust_multidimensional,79.3519595096155
+Measurement & modeling (2),trust_post,76.6470406895004
+Measurement & modeling (2),distrust_post,23.2093918944961
+Measurement & modeling (2),funding_perceptions,41.7285782434346
+Measurement & modeling (2),policy_role_mean,76.2138855324313
+Measurement & modeling (2),inst_trust_mean,69.9842594678905
+Measurement & modeling (2),belief_post,89.2321303694129
+Measurement & modeling (2),concern_mean,73.57226999476
+Measurement & modeling (2),policy_general,75.9125346969793
+Measurement & modeling (2),policy_specific_mean,72.6270350249274
+Measurement & modeling (2),behavior_mean,41.3834463480138
+Measurement & modeling (2),donation_ams,2.72366850477678
+Measurement & modeling (2),newsletter_signup,0.0124436737637369
+Peer-review,trust_multidimensional,80.0757884613468
+Peer-review,trust_post,79.4174140110319
+Peer-review,distrust_post,21.6516559514831
+Peer-review,funding_perceptions,42.1530506519942
+Peer-review,policy_role_mean,76.3568336119682
+Peer-review,inst_trust_mean,70.6658947445736
+Peer-review,belief_post,89.2354835542985
+Peer-review,concern_mean,73.867122586268
+Peer-review,policy_general,76.0746622470534
+Peer-review,policy_specific_mean,72.8432621810803
+Peer-review,behavior_mean,41.5395542757235
+Peer-review,donation_ams,2.80476444972197
+Peer-review,newsletter_signup,0.0213591236282146
+Scientist community helpers,trust_multidimensional,80.7781675024896
+Scientist community helpers,trust_post,79.2971967406617
+Scientist community helpers,distrust_post,21.7009647107279
+Scientist community helpers,funding_perceptions,41.2950384210319
+Scientist community helpers,policy_role_mean,77.4145000506112
+Scientist community helpers,inst_trust_mean,69.6837863207272
+Scientist community helpers,belief_post,89.5719722835841
+Scientist community helpers,concern_mean,74.2597587323649
+Scientist community helpers,policy_general,76.4312002476538
+Scientist community helpers,policy_specific_mean,72.6619976839631
+Scientist community helpers,behavior_mean,41.4831516498884
+Scientist community helpers,donation_ams,2.87189690313641
+Scientist community helpers,newsletter_signup,0.015658804735963
+Consensus,trust_multidimensional,79.9852420381604
+Consensus,trust_post,77.2707986220485
+Consensus,distrust_post,22.6569438460886
+Consensus,funding_perceptions,42.1924623271766
+Consensus,policy_role_mean,77.2610814023316
+Consensus,inst_trust_mean,70.6028270109568
+Consensus,belief_post,90.9026985968531
+Consensus,concern_mean,73.3083662927824
+Consensus,policy_general,76.2890716782169
+Consensus,policy_specific_mean,72.8040062736185
+Consensus,behavior_mean,40.8583457364329
+Consensus,donation_ams,2.77151004472959
+Consensus,newsletter_signup,0.0102881529850164
+Portrait Prof. Cherry,trust_multidimensional,79.3208653128266
+Portrait Prof. Cherry,trust_post,77.3720498307415
+Portrait Prof. Cherry,distrust_post,22.8494838572656
+Portrait Prof. Cherry,funding_perceptions,41.9593721125288
+Portrait Prof. Cherry,policy_role_mean,77.4112844556269
+Portrait Prof. Cherry,inst_trust_mean,69.7883360028026
+Portrait Prof. Cherry,belief_post,89.059779021742
+Portrait Prof. Cherry,concern_mean,73.6017348260521
+Portrait Prof. Cherry,policy_general,76.1671236784618
+Portrait Prof. Cherry,policy_specific_mean,72.4780665838557
+Portrait Prof. Cherry,behavior_mean,41.2296315413881
+Portrait Prof. Cherry,donation_ams,2.6886055235612
+Portrait Prof. Cherry,newsletter_signup,0.0184415577931726
+Model accuracy,trust_multidimensional,80.5208094885254
+Model accuracy,trust_post,80.09670439993
+Model accuracy,distrust_post,21.0356681632909
+Model accuracy,funding_perceptions,41.3245455508416
+Model accuracy,policy_role_mean,77.4179862385869
+Model accuracy,inst_trust_mean,70.9862248316231
+Model accuracy,belief_post,91.4148643083227
+Model accuracy,concern_mean,74.7875254353228
+Model accuracy,policy_general,77.3348254568651
+Model accuracy,policy_specific_mean,73.3430558538333
+Model accuracy,behavior_mean,41.699071045703
+Model accuracy,donation_ams,2.80881541465176
+Model accuracy,newsletter_signup,0.0135166920797922
+Interview Prof. Sebille,trust_multidimensional,80.5070107983692
+Interview Prof. Sebille,trust_post,77.3464089612879
+Interview Prof. Sebille,distrust_post,22.582827038492
+Interview Prof. Sebille,funding_perceptions,42.0334179013567
+Interview Prof. Sebille,policy_role_mean,77.2883028343225
+Interview Prof. Sebille,inst_trust_mean,69.9472946930948
+Interview Prof. Sebille,belief_post,89.2647676619409
+Interview Prof. Sebille,concern_mean,74.5781381127649
+Interview Prof. Sebille,policy_general,76.7821346708801
+Interview Prof. Sebille,policy_specific_mean,73.2389088353958
+Interview Prof. Sebille,behavior_mean,41.7327160748985
+Interview Prof. Sebille,donation_ams,2.78645116842031
+Interview Prof. Sebille,newsletter_signup,0.0119928767204031
+Extreme weather predictions,trust_multidimensional,78.703396148505
+Extreme weather predictions,trust_post,75.1815723886734
+Extreme weather predictions,distrust_post,23.9507320285494
+Extreme weather predictions,funding_perceptions,41.7972479318872
+Extreme weather predictions,policy_role_mean,76.2241872947929
+Extreme weather predictions,inst_trust_mean,68.8466239221755
+Extreme weather predictions,belief_post,86.6153279168225
+Extreme weather predictions,concern_mean,75.2874119568938
+Extreme weather predictions,policy_general,76.4468197602469
+Extreme weather predictions,policy_specific_mean,72.2381574539033
+Extreme weather predictions,behavior_mean,40.8832954828536
+Extreme weather predictions,donation_ams,2.76314436821399
+Extreme weather predictions,newsletter_signup,0.0220500513265467

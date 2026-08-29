@@ -1,0 +1,62 @@
+{
+  "upload_type": "software",
+  "title": "Silicon Sample Benchmark — Tier 2 (group-level reasoning) submission (team team_9)",
+  "version": "1.0-t2",
+  "language": "eng",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Toubia, Olivier",
+      "affiliation": "Columbia Business School"
+    },
+    {
+      "name": "Peng, Tianyi",
+      "affiliation": "Columbia Business School"
+    },
+    {
+      "name": "Gui, George",
+      "affiliation": "Columbia Business School"
+    },
+    {
+      "name": "Qiu, Yuchen",
+      "affiliation": "Columbia Business School"
+    },
+    {
+      "name": "Venkat, Naveen",
+      "affiliation": "Columbia University"
+    }
+  ],
+  "description": "<p>Group-level Silicon Sample predictions obtained by calibrating GPT-5.6 Luna digital-twin responses with Twin-2K Wave-4 anchors using the SYN-DIGITS elastic-net estimator.<\/p>",
+  "keywords": [
+    "Silicon Sample Benchmark",
+    "silicon sampling",
+    "large language models",
+    "computational social science",
+    "survey methodology",
+    "public opinion",
+    "climate communication",
+    "treatment effect prediction"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://janpfander.github.io/llm_predictions_megastudy/",
+      "relation": "isPartOf",
+      "scheme": "url",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://janpfander.github.io/llm_predictions_megastudy/amendment_preregistration.html",
+      "relation": "references",
+      "scheme": "url",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/likelili/silicon-sample-team-9-tier2",
+      "relation": "isCompiledBy",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Team team_9. Disclosure class B."
+}

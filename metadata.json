@@ -1,0 +1,61 @@
+{
+  "team_id": "team_9",
+  "team_name": "ExploraTwin",
+  "contact": "ot2107@gsb.columbia.edu",
+  "creators": [
+    {
+      "name": "Toubia, Olivier",
+      "affiliation": "Columbia Business School",
+      "orcid": ""
+    },
+    {
+      "name": "Peng, Tianyi",
+      "affiliation": "Columbia Business School",
+      "orcid": ""
+    },
+    {
+      "name": "Gui, George",
+      "affiliation": "Columbia Business School",
+      "orcid": ""
+    },
+    {
+      "name": "Qiu, Yuchen",
+      "affiliation": "Columbia Business School",
+      "orcid": ""
+    },
+    {
+      "name": "Venkat, Naveen",
+      "affiliation": "Columbia University",
+      "orcid": ""
+    }
+  ],
+  "abstract": "Group-level Silicon Sample predictions obtained by calibrating GPT-5.6 Luna digital-twin responses with Twin-2K Wave-4 anchors using the SYN-DIGITS elastic-net estimator.",
+  "license": "CC-BY-4.0",
+  "tier": 2,
+  "entry": "secondary-1",
+  "approach_family": "calibrated individual digital-twin simulation aggregated to group means",
+  "models": [
+    "gpt-5.6-luna (OpenAI; reasoning_effort=medium)",
+    "SYN-DIGITS elastic net (alpha=0.01; l1_ratio=0.3)"
+  ],
+  "code_repository": "https://github.com/likelili/silicon-sample-team-9-tier2",
+  "code_doi": null,
+  "disclosure_class": "B",
+  "escrow_doi": "10.5281/zenodo.22150315",
+  "zenodo_doi": null,
+  "prediction_files": [
+    {
+      "file": "predictions/team_9_T2_secondary-1_v1_cells_main.csv",
+      "sha256": "d19f7e021945db59e0b5c20868d4abdf2fae06a7e1fef723ace1b61c12b1eef3"
+    },
+    {
+      "file": "predictions/team_9_T2_secondary-1_v1_cells_moderator.csv",
+      "sha256": "1d70e5655dc5cf5d3253d4e269175957b8b15cf2ae8756cf0556f7e4ab14748f"
+    }
+  ],
+  "coverage": {
+    "interventions": 16,
+    "outcomes": 13
+  },
+  "blinding_attestation": true
+}

@@ -41,7 +41,7 @@
   "approach_family": "calibrated and poststratified individual digital-twin simulation aggregated to group means",
   "models": [
     "gpt-5.6-luna (OpenAI; reasoning_effort=medium)",
-    "SYN-DIGITS elastic net (alpha=0.01; l1_ratio=0.3)"
+    "SYN-DIGITS elastic net (alpha=0.01; l1_ratio=0.3; adaptive transfer tau=0.15)"
   ],
   "code_repository": "https://github.com/likelili/silicon-sample-team-9-tier2",
   "code_doi": null,
@@ -51,11 +51,11 @@
   "prediction_files": [
     {
       "file": "predictions/team_9_T2_secondary-1_v1_cells_main.csv",
-      "sha256": "3a89a948cd4538043c8da9886a6eec441bbf469583efc9cf70d8bc89d66829e4"
+      "sha256": "9f50e885aee5067460eee2d5ef2de0259f35dda237ffe50a8b4d36cbc71b076d"
     },
     {
       "file": "predictions/team_9_T2_secondary-1_v1_cells_moderator.csv",
-      "sha256": "ee1189138e7c43bcb5c8406177385612183d552c7a403195420e7ac8516d2df8"
+      "sha256": "11743092d5e75504c53b057bad6e4aa5fd4befa0329ec0993175b87e29c623c9"
     }
   ],
   "coverage": {

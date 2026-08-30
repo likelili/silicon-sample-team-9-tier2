@@ -12,4 +12,4 @@ This repository contains Team 9's `secondary-1` Tier 2 submission. We calibrated
 
 Run the organizers' validator with `make check`. To regenerate the elastic-net calibration and verify the submitted means from the public matrices, run `PYTHONPATH=code python -m calib.reproduce_submission` in an environment with the listed scientific dependencies. The adopted provider responses and supporting reproduction materials are available under restricted access at [Zenodo](https://doi.org/10.5281/zenodo.22168892).
 
-Authors: Olivier Toubia, Tianyi Peng, George Gui, Yuchen Qiu, and Naveen Venkat.
+Team members: Olivier Toubia, Tianyi Peng, George Gui, Yuchen Qiu, and Naveen Venkat.

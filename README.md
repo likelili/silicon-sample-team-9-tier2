@@ -10,6 +10,6 @@ This repository contains Team 9's `secondary-1` Tier 2 submission. We calibrated
 - `code/calib/` and `code/syn-digits/` — calibration and weighting code.
 - `artifacts/` — aligned Wave-4 anchors, raw and calibrated Silicon target matrices, the 40-cell target grid, respondent weights, fit diagnostics, and audit reports.
 
-Run the organizers' validator with `make check`. To regenerate the elastic-net calibration and verify the submitted means from the public matrices, run `PYTHONPATH=code python -m calib.reproduce_submission` in an environment with the listed scientific dependencies. The simulation request and response archive is available under restricted access at [Zenodo](https://doi.org/10.5281/zenodo.22150315).
+Run the organizers' validator with `make check`. To regenerate the elastic-net calibration and verify the submitted means from the public matrices, run `PYTHONPATH=code python -m calib.reproduce_submission` in an environment with the listed scientific dependencies. The adopted provider responses and supporting reproduction materials are available under restricted access at [Zenodo](https://doi.org/10.5281/zenodo.22168892).
 
 Authors: Olivier Toubia, Tianyi Peng, George Gui, Yuchen Qiu, and Naveen Venkat.

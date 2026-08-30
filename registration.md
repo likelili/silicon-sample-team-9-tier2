@@ -5,54 +5,54 @@ This registration documents Team 9's Tier 2 `secondary-1` submission. Items mark
 ## 0 · Approach identity and output
 
 - **0.1 Team ★:** Team 9 (ExploraTwin): Olivier Toubia, Tianyi Peng, George Gui, Yuchen Qiu, and Naveen Venkat. The organizers approved this five-person team.
-- **0.2 Plain-language summary ★:** We simulated all 17 conditions with GPT-5.6 Luna using Twin-2K-500 personas. We calibrated the 221 condition–outcome columns with the SYN-DIGITS digital-twin calibration framework (Fan et al. 2026), using 123 Twin-2K Wave-4 anchor items with matched human and separately simulated responses. These Wave-4 responses were generated separately and were not part of the persona information supplied to the benchmark simulations. We then reweighted the calibrated individual-level predictions using a 40-cell gender × age × race target distribution to estimate condition-level and one-way moderator means.
-- **0.3 Tier and approach family ★:** Tier 2; calibrated individual digital-twin predictions with demographic cell-proportion reweighting, aggregated to group-level predictions.
-- **0.4 Ordered pipeline:** (1) We parsed the supplied QSF and simulated 2,007 eligible twins in all 17 conditions. (2) We retained the 1,921 twins with exactly complete responses in every condition. (3) We constructed the 13 benchmark outcomes before calibration. (4) We aligned each twin's simulated responses to 123 Wave-4 anchor items with the corresponding human Twin-2K responses. (5) For each of the 17 × 13 targets, we fit the frozen elastic-net specification on the synthetic anchor columns and synthetic Silicon target, then applied the fitted relationship to the human anchor matrix. (6) We assigned each clean-pool twin a fixed weight equal to the target proportion of its gender × age × race cell divided by that cell's proportion in the clean pool. (7) We used the full reweighted pool to estimate 221 condition means and 5,967 one-way moderator means.
-- **0.5 Coverage ★:** All 17 conditions, 13 outcomes, six moderators, and 27 moderator levels. The main and moderator files contain 221 and 5,967 unique, nonmissing rows, respectively.
+- **0.2 Plain-language summary ★:** We used Twin-2K-500 digital twins to simulate responses in every benchmark condition. We calibrated the individual predictions using matched human and synthetic responses to previously administered questions through SYN-DIGITS (Fan et al. 2026), then applied demographic cell-proportion weights to estimate condition-level and subgroup means.
+- **0.3 Submission tier and approach family ★:** Tier 2; single-model, persona-conditioned survey simulation followed by deterministic calibration and demographic reweighting.
+- **0.4 Pipeline diagram:** (1) We screened the Twin-2K respondents using their pre-study responses. (2) We simulated every eligible twin in all 17 conditions. (3) We retained the twins with complete responses in every condition and constructed the 13 benchmark outcomes from their survey answers. (4) We calibrated each condition–outcome prediction using matched human and synthetic Wave-4 responses. (5) We applied fixed demographic weights and aggregated the individual predictions into overall condition means and one-way moderator means.
+- **0.5 Coverage ★:** Complete coverage of all 17 conditions and 13 outcomes. The submission contains 221 condition–outcome means and 5,967 one-way moderator means covering all six moderators and 27 reported levels; every required prediction is unique and nonmissing.
 
 ## A · Scope of LLM use
 
-- **A.1 Purpose:** GPT-5.6 Luna generated pre-study, study, and Wave-4 anchor responses. Calibration and aggregation were deterministic.
-- **A.2 Automation ★:** Prediction generation, calibration, and aggregation were automated. No simulated or calibrated value was manually edited.
+- **A.1 Purpose:** GPT-5.6 Luna generated the twins' pre-study responses, benchmark-study responses, and separate Wave-4 anchor responses. All eligibility checks, outcome construction, calibration, weighting, and aggregation were performed deterministically without an LLM.
+- **A.2 Degree of automation ★:** The workflow was fully automated at prediction time. No simulated response, calibrated prediction, or submitted mean was manually selected or edited.
 
-## B · Model and system details
+## B · Model / system details
 
-- **B.1 Model:** OpenAI `gpt-5.6-luna`, reasoning effort `medium`.
-- **B.2 Access:** Pre-study and Wave-4 anchors used the synchronous Responses API; study runs used `chat/completions` through the Batch API on August 26–28, 2026.
-- **B.3 Configuration:** Temperature and top-p were not sent. Survey randomization used global seed 42 and deterministic twin-condition seeds. Provider-side generation was not seedable.
-- **B.4 Customization:** No fine-tuning, retrieval, tools, or web access.
-- **B.5 Memory:** No provider memory. Frozen pre-study answers were inserted explicitly into each study prompt.
-- **B.6 Inference stack:** Hosted API.
-- **B.7 Ensembles:** None.
+- **B.1 Model name:** OpenAI `gpt-5.6-luna`, using the exact provider model identifier configured by the platform.
+- **B.2 Access and context mode:** Hosted API. Pre-study and Wave-4 calls used the synchronous Responses API; benchmark-study calls used `chat/completions` through the Batch API on August 26–28, 2026. Each condition was a fresh session.
+- **B.3 Configuration:** Medium reasoning effort and one completion per request. The study batch requests set `max_completion_tokens = 8000`. Temperature, top-p, top-k, frequency and presence penalties, stop sequences, and provider generation seeds were not supplied. Survey-side randomization used global seed 42 and deterministic session seeds.
+- **B.4 Customization:** No fine-tuning, retrieval-augmented generation, prompt optimization against benchmark outcomes, tool use, web search, or agentic model orchestration.
+- **B.5 Persistent memory:** None. The model retained no state across conditions. When earlier answers were required by the survey flow, they were inserted explicitly into the next prompt.
+- **B.6 Inference stack:** Not applicable; the model was accessed through a hosted API rather than served locally.
+- **B.7 Ensembles:** None; all simulated responses came from one model and one completion per request.
 
 ## C · Prompts
 
-- **C.1 Exact prompts:** Survey prompts were produced by the deposited SurveyTwin orchestration code; the request and response archive is escrowed.
-- **C.2 System instructions:** The model answered as the supplied persona and returned structured JSON matching displayed options or numeric ranges.
-- **C.3 Design:** Prompts preserved QSF flow, randomization, stimuli, and prior-stage answers.
+- **C.1 Exact prompts:** The exact system and user messages were generated from the supplied QSF by the frozen SurveyTwin pipeline. Full request bodies are included in the escrowed archive. Prompts were not revised in response to benchmark predictions.
+- **C.2 System-wide instructions:** The model was instructed to answer as the supplied persona, follow the displayed survey instructions and response scales, and return one structured response for every requested answer unit.
+- **C.3 Prompt-design rationale:** The prompts preserve the wording, stimuli, response options, order, and logic of the supplied instrument while requiring machine-readable output that can be aligned with Qualtrics variables and validated automatically.
 
-## D · Persona and profile construction
+## D · Persona / profile construction (Tiers 1–2)
 
-- **D.1 Source:** Twin-2K-500 contains more than 500 survey answers from a representative panel of 2,058 U.S. respondents (Toubia et al. 2025). The pre-study used full personas; study and Wave-4 simulations used summary personas.
-- **D.2 Verbalization:** We used the released full and narrative-summary representations without editing them.
-- **D.3 Assignment and weighting:** Each eligible twin completed every condition, and calibration was fit on the universal clean pool of 1,921 twins. We retained the full clean pool and reweighted its members to a 40-cell gender × age × race target table; no respondents were resampled at this stage. The table was reconstructed by iterative proportional fitting of a Census-seeded joint distribution to the benchmark's released gender × age and gender × race margins. Those released margins are reproduced exactly; the unreported age × race association is modeled rather than benchmark-supplied. Each twin's fixed weight equals its target-cell proportion divided by its clean-pool cell proportion and is reused in every condition and outcome.
+- **D.1 Profile source:** We used Twin-2K-500, which contains more than 500 survey answers from a representative panel of 2,058 U.S. respondents (Toubia et al. 2025). Of these, 2,007 passed the prespecified pre-study eligibility checks. Every eligible twin was assigned to all 17 conditions rather than to only one condition.
+- **D.2 Profile verbalization:** Pre-study eligibility responses were generated from the released full representation. Benchmark and Wave-4 simulations used the released paragraph-length summary representation. Neither representation was edited.
+- **D.3 Assignment and weighting:** We retained the 1,921 twins with exactly complete sessions in every condition, so the same respondents underlie every contrast. No respondents were resampled for Tier 2. We assigned one fixed weight to each twin using a 40-cell gender × age × race target distribution. The joint distribution was reconstructed by iterative proportional fitting of a Census-seeded table to the benchmark's released gender × age and gender × race margins. Each weight equals the cell's target proportion divided by its proportion in the clean pool and is reused across conditions and outcomes.
 
 ## E · Stimulus and survey administration
 
-- **E.1 Presentation:** Each session displayed one QSF-defined intervention or control text. The state-dependent “Extreme weather predictions” condition used two stages.
-- **E.2 Walk-through:** Sixteen conditions used one study call; “Extreme weather predictions” used two. QSF block, outcome, and choice randomization used deterministic session seeds.
-- **E.3 Elicitation:** The model returned `question_id`, `answer_value`, and `answer_label` in JSON.
+- **E.1 Stimulus presentation:** Intervention and control texts were taken verbatim from the QSF. Each session received exactly one intervention or one of the three texts pooled as the control condition. For the state-contingent “Extreme weather predictions” condition, the applicable follow-up text was selected after the model answered the state question.
+- **E.2 Survey walk-through:** Sixteen conditions were administered in one model call. The state-contingent condition used two sequential calls, with the first-stage answer and prior survey context supplied to the second stage. QSF block order, outcome order, choice order, and condition-specific randomization were resolved with deterministic session seeds. Questions, response scales, and attention or comprehension items were displayed as specified by the QSF.
+- **E.3 Response elicitation:** The model returned constrained, structured JSON containing the question identifier, answer value, and answer label for each requested answer unit. No token log-probabilities were used.
 
 ## F · Stochasticity and aggregation
 
-- **F.1 Runs and seeds:** One run per twin-condition combination; global seed 42. All calibration calculations were deterministic.
-- **F.2 Aggregation:** Each condition mean is the weighted mean of calibrated predictions over all 1,921 clean-pool twins. For a one-way moderator cell, we restrict the pool to that moderator level and renormalize the same fixed weights within the subset. This preserves the target joint distribution conditionally for age, gender, and race and applies the same population adjustment within education, income, and party subgroups. Twin-2K has no respondents in the benchmark's `gender = Other` level; following organizer guidance, those 221 cells repeat the corresponding condition mean as an explicit no-moderation prediction.
+- **F.1 Runs and seeds:** We generated one response per twin–condition combination. Survey randomization used global seed 42 and deterministic session-level seeds; the provider did not expose deterministic generation for this model. Calibration and aggregation are exactly reproducible from the deposited matrices.
+- **F.2 Aggregation rule:** For each condition–outcome pair, we took the weighted mean across all 1,921 clean-pool twins. For each one-way moderator prediction, we restricted the pool to that level and renormalized the same weights within the subset. Twin-2K contains no respondents in the benchmark's `gender = Other` level; following organizer guidance, these cells repeat the corresponding overall condition mean as a no-moderation prediction.
 
 ## G · Validation and post-processing
 
-- **G.1 Human validation:** No manual response editing or human outcome ratings.
-- **G.2 Parsing and exclusions:** We accepted only sessions whose returned question-ID set exactly equaled the requested set. The production reconstruction matched the Tier 1 export in all 117,000 checked outcome cells. The weighting audit recovers all 40 target-cell proportions to numerical precision; weights range from 0.309 to 9.792 and yield an effective sample size of 1,442.7. Every submitted cell is unique, nonmissing, and within its declared native scale.
-- **G.3 Calibration:** We applied the SYN-DIGITS digital-twin calibration framework of Fan et al. (2026), using its elastic-net specification with `regularization_multiplier = 0.01`, `l1_ratio = 0.3`, rank-5 hard-SVD donor imputation, `min_col_std = 1.0`, and all 123 Wave-4 anchors. For each target, the model was fit on synthetic anchors plus that synthetic Silicon outcome and transferred to the aligned human anchor matrix. Rows missing a synthetic target were excluded from that target's fit rather than mean-filled. Calibration follows the published adaptive-transfer rule: a target keeps the elastic-net prediction when its twin-side training error satisfies `train_mse <= tau` with `tau = 0.15`, and otherwise falls back to the uncalibrated digital-twin response. 68 of the 221 targets meet the threshold and 153 fall back. Because `train_mse` is the residual error on the standardized twin target, the threshold corresponds to a twin-side fit of R^2 >= 0.85 for the twelve outcomes whose spread exceeds `min_col_std`; `newsletter_signup` is a near-binary indicator whose standardized variance is 0.015, so it clears the threshold on a fit of R^2 = 0.02. On the Wave-4 tuning anchors the gate did not improve panel-mean error over always-calibrate, and `train_mse` was uncorrelated with realized calibration benefit (Pearson r = 0.034, p = 0.79); the gate is retained because it is the published specification, not because it was selected on our data. The same procedure without the gate, evaluated once on 61 untouched Wave-4 anchors: normalized panel-mean absolute error decreased by 0.259 percentage points and subgroup RMSE by 0.600 points relative to raw DT predictions.
+- **G.1 Human validation:** None. Humans did not review, rate, select, or edit the simulated responses or submitted predictions.
+- **G.2 Post-processing:** Returned responses were parsed by question identifier and converted according to each item's declared choice or numeric scale. We retained only sessions whose returned question set exactly matched the requested set and only twins with exact completion in all 17 conditions. The resulting effective sample is 1,921 per condition. Reconstruction reproduced all 117,000 Tier 1 outcome cells, and every Tier 2 prediction is unique, finite, and within its declared scale. The demographic weights range from 0.309 to 9.792, have an effective sample size of 1,442.7, and recover the 40 target-cell proportions to numerical precision.
+- **G.3 Calibration corrections:** We applied SYN-DIGITS (Fan et al. 2026) separately to each of the 221 condition–outcome columns. The calibration inputs were respondent-aligned human and GPT-5.6 Luna responses to 123 Twin-2K Wave-4 questions; the Wave-4 synthetic answers were generated separately and were not included in the benchmark personas. For each target, rank-5 hard-SVD imputation filled structurally missing anchor values separately in the human and synthetic matrices; each matrix was standardized using its own column statistics with `min_col_std = 1.0`. An elastic net with regularization multiplier `0.01` and L1 ratio `0.3` learned the relationship from synthetic anchors to the synthetic benchmark target, and that relationship was then applied to the human anchors. No human benchmark outcome was used. Following the published transfer rule, we retained the calibrated column when the synthetic-side training MSE was at most `0.15` and otherwise retained the raw digital-twin column; 68 targets were calibrated and 153 used the raw fallback. This specification was fixed without reference to human Silicon Sample outcomes.
 
 ## H · Learning and conditioning components
 
@@ -68,17 +68,17 @@ This registration documents Team 9's Tier 2 `secondary-1` submission. Items mark
 
 ## J · Design-space search
 
-- **J.1 Search †:** Before production, eight estimator families were compared on a prespecified half of the 123 Wave-4 anchors. Production nevertheless used the published Twin-2K elastic-net specification to remain tied to the SYN-DIGITS implementation. Gate behavior was examined only on the Wave-4 tuning fold and separate MegaStudy outcomes; the 61-anchor holdout was opened once after freezing the no-gate rule. No Silicon human outcome was used.
+- **J.1 Search †:** Before production, eight estimator families were compared on a prespecified half of the 123 Wave-4 anchors. Production used the published Twin-2K elastic-net specification and its fixed `tau = 0.15` transfer rule to remain tied to the SYN-DIGITS implementation. Gate behavior was examined on the Wave-4 tuning fold and separate MegaStudy outcomes; the 61-anchor holdout was opened once to evaluate the ungated calibration specification. No Silicon human outcome was used for model selection, calibration, or gating.
 
 ## K · Reproducibility and frozen artifacts
 
 - **K.1 Code and materials:** Public code and derived matrices are in this repository. `code/calib/reproduce_submission.py` regenerates the 221 elastic-net calibrations from the public matrices and verifies both submitted files; `code/calib/poststratification.py` constructs and audits the fixed 40-cell reweighting factors. The original response-to-target reconstruction remains in `code/calib/production.py` and uses the escrowed run archive. The SYN-DIGITS calibration implementation is vendored under its MIT license in `code/syn-digits/`.
-- **K.2 Raw logs †:** The Silicon simulation request and response archive and SurveyTwin engine snapshot are under restricted access at [10.5281/zenodo.22150315](https://doi.org/10.5281/zenodo.22150315). Public `artifacts/` contains the aligned anchor matrices, raw and calibrated 1,921 × 221 target matrices, target grid, respondent weights, and weighting audit needed to reproduce the submitted means.
+- **K.2 Raw logs †:** The adopted provider-response files, session-completeness ledger, Wave-4 calibration anchors, individual target matrices, demographic weighting inputs, diagnostics, and reproduction code are under restricted access at [10.5281/zenodo.22168892](https://doi.org/10.5281/zenodo.22168892). The public `artifacts/` directory contains the aligned anchor matrices, raw and calibrated 1,921 × 221 target matrices, target grid, respondent weights, and weighting audit needed to reproduce the submitted means.
 - **K.3 Resources:** The calibration fit 221 elastic-net target models on 1,921 twins using one workstation. Calibration itself used no API calls.
 
 ## L · Disclosure class
 
-**Class B (escrowed).** Prediction files, calibration code, anchors, target matrices, and audits are public; full simulation request/response logs and the engine snapshot are escrowed at [10.5281/zenodo.22150315](https://doi.org/10.5281/zenodo.22150315).
+**Class B (escrowed).** Prediction files, calibration code, anchors, target matrices, and audits are public; the adopted provider responses and supporting reconstruction evidence are escrowed at [10.5281/zenodo.22168892](https://doi.org/10.5281/zenodo.22168892).
 
 ## References
 
